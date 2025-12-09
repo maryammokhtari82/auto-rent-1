@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@source "./src/preline/preline/dist/*.js";
+@import "./src/preline/preline/variants.css";
+@plugin "@tailwindcss/forms";
+@font-face {
+  font-family: ESM;
+  src: url(../fonts/Medium/Estedad-FD\ Medium.eot);
+  src: url(../fonts/Medium/Estedad-FD\ Medium.ttf);
+  src: url(../fonts/Medium/Estedad-FD\ Medium.woff);
+  src: url(../fonts/Medium/Estedad-FD\ Medium.woff2);
+}
+@font-face {
+  font-family: ESB;
+  src: url(../fonts/Bold/Estedad-FD\ Bold.eot);
+  src: url(../fonts/Bold/Estedad-FD\ Bold.ttf);
+  src: url(../fonts/Bold/Estedad-FD\ Bold.woff);
+  src: url(../fonts/Bold/Estedad-FD\ Bold.woff2);
+}
+@font-face {
+  font-family: ESR;
+  src: url(../fonts/Regular/Estedad-FD\ Regular.eot);
+  src: url(../fonts/Regular/Estedad-FD\ Regular.ttf);
+  src: url(../fonts/Regular/Estedad-FD\ Regular.woff);
+  src: url(../fonts/Regular/Estedad-FD\ Regular.woff2);
+}
+@theme {
+  --font-ESM: ESM;
+  --font-ESB: ESB;
+  --font-ESR: ESR;
+  --breakpoint-desktop: 1040px;
+}
