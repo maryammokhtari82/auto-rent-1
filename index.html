@@ -245,9 +245,12 @@
                 تحویل در محل
               </h6>
               <div
-                class="w-[264px] font-ESR text-[12px] font-normal leading-[180%] text-[#757575] text-center"
+                class="w-[264px] font-ESR sm:text-[12px] text-[10px] font-normal leading-[180%] text-[#757575] text-center"
               >
-                تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+                تحویل خودرو در زمان و مکان تعیین شده<br
+                  class="sm:hidden block"
+                />
+                توسط شما خواهد بود.
               </div>
             </div>
           </div>
@@ -272,7 +275,8 @@
               <div
                 class="w-[264px] font-ESR text-[12px] font-normal leading-[180%] text-[#757575] text-center"
               >
-                کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+                کارشناسان ما در هر زمان و مکان،<br class="sm:hidden block" />
+                پاسخگوی سوالات شما خواهند بود.
               </div>
             </div>
           </div>
@@ -297,7 +301,8 @@
               <div
                 class="w-[264px] font-ESR text-[12px] font-normal leading-[180%] text-[#757575] text-center"
               >
-                هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+                هدف ما، ارائه بهترین خدمات با <br class="sm:hidden block" />
+                مناسب ترین قیمت ممکن است.
               </div>
             </div>
           </div>
@@ -343,15 +348,23 @@
         <!-- #region relief-network-->
         <div class="relief-network max-w-[1220px] xl:mb-40 mb-8 xl:h-auto">
           <div
-            class="w-full h-[529px] bg-[linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/src/images/relief-network/image-1.png)] bg-cover bg-position-[center_top] rounded-2xl"
+            class="w-full h-[529px] rounded-2xl bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0.6)
+                ),
+                url('./src/images/relief-network/image-1.png');
+            "
           >
             <h3
-              class="font-ESB text-[32px] font-bold leading-[140%] md:px-0 px-[30px] text-[#FFFFFF] text-center lg:pt-[279px] md:pt-[250px] sm:pt-[190px] pt-[100px] box-border mb-4"
+              class="font-ESB sm:text-[32px] text-[24px] font-bold leading-[140%] md:px-0 px-[30px] text-[#FFFFFF] text-center lg:pt-[279px] md:pt-[250px] sm:pt-[190px] pt-[70px] box-border mb-4"
             >
               شبکه امدادی و تعمیرات خودرو
             </h3>
             <p
-              class="lg:max-w-[937px] w-full xl:px-0 px-10 box-border mx-auto text-center font-ESR text-[14px] font-[400px] leading-[180%] text-[#FFFFFF] mb-[34px]"
+              class="lg:max-w-[937px] w-full xl:px-0 px-10 box-border mx-auto text-center font-ESR sm:text-[14px] text-[12px] font-[400px] leading-[180%] text-[#FFFFFF] mb-[34px]"
             >
               شبکه تحت پوشش اتورنت که با سرمایه‌گذاری و همکاری شرکای تجاری در
               خدمت مشتریان قرار گرفته است شامل 2000 نقطه در سراسر کشور ایــران و
@@ -400,7 +413,7 @@
             </div>
           </div>
           <div
-            class="xl:hidden flex flex-col xl:justify-center xl:items-stretch items-center mx-auto flex-wrap xl:flex-nowrap gap-6"
+            class="xl:hidden flex flex-col xl:justify-center xl:items-stretch items-center mx-auto flex-wrap xl:flex-nowrap gap-6 mt-6"
           >
             <div
               class="max-w-[494px] pt-3 px-6 pb-2 box-border border border-[#C2C2C2] bg-[#FFFFFF] rounded-2xl flex flex-col gap-2.5"
@@ -442,19 +455,24 @@
         <!-- #region footer-->
         <footer
           class="max-w-[1218px] bg-[linear-gradient(rgba(41,45,50,0.85),rgba(41,45,50,0.85)),url(/src/images/footer/image-1.png)] bg-center bg-cover shadow-[0_0_6px_rgba(0,0,0,0.35)] rounded-2xl py-14 px-6 box-border"
+          style="
+            background-image: linear-gradient(
+                rgba(41, 45, 50, 0.85),
+                rgba(41, 45, 50, 0.85)
+              ),
+              url('./src/images/footer/image-1.png');
+          "
         >
           <div
             class="contact max-w-[1120px] rounded-2xl border border-[#868686] box-border p-4 mx-auto flex 2xl:flex-row flex-col 2xl:flex-nowrap flex-wrap items-center justify-center gap-y-5 2xl:py-4 py-[30px] mb-4"
           >
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-2.png" alt="image-2" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -470,9 +488,11 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-3.png" alt="image-3" />
@@ -493,16 +513,16 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center justify-center sm:ml-0 ml-[30px] content-center"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-4.png" alt="image-4" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center justify-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -539,10 +559,10 @@
               <div
                 class="w-[134px] font-ESM text-[14px] leading-[100%] font-medium flex flex-col justify-center gap-[30px] text-[#FFFFFF] pt-[5px] box-border md:text-right text-center"
               >
-                <p><a href="#">دسترسی آسان</a></p>
-                <p><a href="./questions.html">سوالات متداول</a></p>
-                <p><a href="./contact-us.html">تماس با ما</a></p>
-                <p><a href="#">درباره ما</a></p>
+                <a href="#"> <p>دسترسی آسان</p></a>
+                <a href="./questions.html"><p>سوالات متداول</p></a>
+                <a href="./contact-us.html"><p>تماس با ما</p></a>
+                <a href="./index.html"><p>درباره ما</p></a>
               </div>
             </div>
             <div class="flex justify-center items-center">
@@ -553,10 +573,10 @@
                   خبرنامه
                 </p>
                 <div
-                  class="w-[320px] h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
+                  class="sm:w-[320px] w-full h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
                 >
                   <p
-                    class="font-ESR text-[12px] leading-[100%] font-normal text-[#C2C2C2]"
+                    class="font-ESR text-[12px] leading-[180%] font-normal text-[#C2C2C2]"
                   >
                     ایمیل خود را وارد کنید
                   </p>
@@ -573,7 +593,11 @@
             class="max-w-[1120px] mx-auto border border-[#868686] mb-6"
           ></div>
           <div class="certificate mx-auto flex gap-2 justify-center">
-            <img src="./src/images/footer/image-6.png" alt="image-6" />
+            <img
+              src="./src/images/footer/image-6.png"
+              alt="image-6"
+              class="w-[24px] h-[24px]"
+            />
             <p
               class="font-ESM text-[14px] text-[#9A9A9A] font-medium leading-[180%]"
             >

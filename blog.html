@@ -16,7 +16,15 @@
     <div class="wrapper max-w-[1440px] mx-auto bg-[#F3F3F3]">
       <!-- #region header-->
       <div
-        class="header max-w-[1440px] h-[400px] bg-[linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/src/images/header/image-1.jpg)] bg-center bg-cover relative"
+        class="header max-w-[1440px] h-[400px] bg-center bg-cover relative"
+        style="
+          background-image: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url('./src/images/header/image-1.jpg');
+        "
       >
         <!-- #region menu-->
         <div class="mobile navbar bg-[#FFFFFF] rounded-b-2xl lg:hidden">
@@ -72,7 +80,7 @@
                     class="w-[86px] h-[42px] mx-auto mb-[5px]"
                 /></a>
                 <li>
-                  <a href="#" class="block text-center rounded-xl"
+                  <a href="./reserve.html" class="block text-center rounded-xl"
                     >رزرو خودرو</a
                   >
                 </li>
@@ -127,7 +135,7 @@
               class="flex gap-x-10 font-ESM text-[16px] font-medium text-[#353535]"
             >
               <div>
-                <a href="#">رزرو خودرو</a>
+                <a href="./reserve.html">رزرو خودرو</a>
               </div>
               <div><a href="#">خدمات ما</a></div>
               <div><a href="#">بلاگ</a></div>
@@ -486,7 +494,7 @@
           </div>
           <!-- #endregion magazine-->
           <!-- #region sidebar-->
-          <div class="sidebar w-[392px] flex flex-col gap-6">
+          <div class="sidebar w-[392px] flex flex-col gap-6 sm:p-0 p-[10px]">
             <div
               class="w-full h-14 rounded-[14px] py-3.5 px-4 box-border bg-[#FFFFFF] flex justify-between items-center"
             >
@@ -510,7 +518,7 @@
                 </p>
                 <div class="w-[60px] h-[5px] bg-[#D79C10]"></div>
               </div>
-              <div class="w-[372px] flex flex-col gap-3">
+              <div class="w-[372px] flex flex-col gap-3 sm:p-0 p-[30px]">
                 <div
                   class="w-full h-[105px] border-b border-[#C2C2C2] px-2 box-border gap-3.5 flex items-center"
                 >
@@ -632,7 +640,7 @@
                   </div>
                 </div>
                 <div
-                  class="w-full h-[105px] px-2 box-border gap-3.5 flex items-center"
+                  class="w-full h-[105px] px-2 box-border gap-3.5 flex items-center sm:pb-0 pb-[15px]"
                 >
                   <img
                     src="./src/images/blog/slidebar/image-5.png"
@@ -674,35 +682,35 @@
               </div>
             </div>
             <div
-              class="w-[392px] bg-[#FFFFFF] rounded-[14px] pb-4 box-border gap-[15px] flex flex-col"
+              class="sm:w-[392px] w-[374px] bg-[#FFFFFF] rounded-[14px] pb-4 box-border gap-[15px] flex flex-col"
             >
               <div class="w-[143px] p-2.5 box-border gap-2.5 flex flex-col">
                 <p
-                  class="font-ESB text-[24px] font-bold text-[#353535] leading-[34px]"
+                  class="font-ESB text-[24px] font-bold text-[#353535] leading-[34px] sm:p-0 pr-[5px]"
                 >
                   برچسب‌ها
                 </p>
                 <div class="w-[60px] h-[5px] bg-[#D79C10]"></div>
                 <div></div>
               </div>
-              <div class="w-[389x] px-2.5 box-border flex gap-[15px]">
+              <div class="w-[389px] px-2.5 box-border flex gap-[15px]">
                 <div
-                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR text-[12px] font-normal leading-[21px] text-[#494949]"
+                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR sm:text-[12px] text-[10px] font-normal leading-[21px] text-[#494949]"
                 >
                   اجاره خودرو
                 </div>
                 <div
-                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR text-[12px] font-normal leading-[21px] text-[#494949]"
+                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR sm:text-[12px] text-[10px] font-normal leading-[21px] text-[#494949]"
                 >
                   مرسدس بنز
                 </div>
                 <div
-                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR text-[12px] font-normal leading-[21px] text-[#494949]"
+                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR sm:text-[12px] text-[10px] font-normal leading-[21px] text-[#494949]"
                 >
                   ون
                 </div>
                 <div
-                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR text-[12px] font-normal leading-[21px] text-[#494949]"
+                  class="bg-[#F3F3F3] rounded-[48px] py-[7px] px-4 box-border gap-2 font-ESR sm:text-[12px] text-[10px] font-normal leading-[21px] text-[#494949]"
                 >
                   بدون راننده
                 </div>
@@ -717,19 +725,24 @@
         <!-- #region footer-->
         <footer
           class="max-w-[1218px] bg-[linear-gradient(rgba(41,45,50,0.85),rgba(41,45,50,0.85)),url(/src/images/footer/image-1.png)] bg-center bg-cover shadow-[0_0_6px_rgba(0,0,0,0.35)] rounded-2xl py-14 px-6 box-border"
+          style="
+            background-image: linear-gradient(
+                rgba(41, 45, 50, 0.85),
+                rgba(41, 45, 50, 0.85)
+              ),
+              url('./src/images/footer/image-1.png');
+          "
         >
           <div
             class="contact max-w-[1120px] rounded-2xl border border-[#868686] box-border p-4 mx-auto flex 2xl:flex-row flex-col 2xl:flex-nowrap flex-wrap items-center justify-center gap-y-5 2xl:py-4 py-[30px] mb-4"
           >
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-2.png" alt="image-2" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -745,9 +758,11 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-3.png" alt="image-3" />
@@ -768,16 +783,16 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center justify-center sm:ml-0 ml-[30px] content-center"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-4.png" alt="image-4" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center justify-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -828,10 +843,10 @@
                   خبرنامه
                 </p>
                 <div
-                  class="w-[320px] h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
+                  class="sm:w-[320px] w-full h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
                 >
                   <p
-                    class="font-ESR text-[12px] leading-[100%] font-normal text-[#C2C2C2]"
+                    class="font-ESR text-[12px] leading-[180%] font-normal text-[#C2C2C2]"
                   >
                     ایمیل خود را وارد کنید
                   </p>
@@ -848,7 +863,11 @@
             class="max-w-[1120px] mx-auto border border-[#868686] mb-6"
           ></div>
           <div class="certificate mx-auto flex gap-2 justify-center">
-            <img src="./src/images/footer/image-6.png" alt="image-6" />
+            <img
+              src="./src/images/footer/image-6.png"
+              alt="image-6"
+              class="w-[24px] h-[24px]"
+            />
             <p
               class="font-ESM text-[14px] text-[#9A9A9A] font-medium leading-[180%]"
             >

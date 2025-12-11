@@ -16,7 +16,15 @@
     <div class="wrapper max-w-[1440px] mx-auto bg-[#F3F3F3]">
       <!-- #region header-->
       <div
-        class="header max-w-[1440px] h-[400px] bg-[linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/src/images/header/image-1.jpg)] bg-center bg-cover relative"
+        class="header max-w-[1440px] h-[400px] bg-center bg-cover relative"
+        style="
+          background-image: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+            url('./src/images/header/image-1.jpg');
+        "
       >
         <!-- #region menu-->
         <div class="mobile navbar bg-[#FFFFFF] rounded-b-2xl lg:hidden">
@@ -71,7 +79,11 @@
                     alt=""
                     class="w-[86px] h-[42px] mx-auto mb-[5px]"
                 /></a>
-                <li><a class="block text-center rounded-xl">رزرو خودرو</a></li>
+                <li>
+                  <a href="./reserve.html" class="block text-center rounded-xl"
+                    >رزرو خودرو</a
+                  >
+                </li>
                 <li><a class="block text-center rounded-xl">خدمات ما</a></li>
                 <li>
                   <a href="./blog.html" class="block text-center rounded-xl"
@@ -119,7 +131,7 @@
               class="flex gap-x-10 font-ESM text-[16px] font-medium text-[#353535]"
             >
               <div>
-                <a href="#">رزرو خودرو</a>
+                <a href="./reserve.html">رزرو خودرو</a>
               </div>
               <div><a href="#">خدمات ما</a></div>
               <div><a href="./blog.html">بلاگ</a></div>
@@ -185,14 +197,16 @@
             <div class="flex flex-col gap-4 lg:items-start items-center">
               <div class="max-w-[365px]">
                 <p
-                  class="font-ESR text-[24px] leading-[42px] font-normal text-[#494949]"
+                  class="font-ESR sm:text-[24px] text-[17px] leading-[42px] font-normal text-[#494949]"
                 >
                   ارتباط با دفتر مرکزی اتورنت
                 </p>
               </div>
-              <div class="h-0.5 md:w-[365px] w-[325px] bg-[#C2C2C2]"></div>
+              <div
+                class="h-0.5 md:w-[365px] sm-[325px] w-[200px] bg-[#C2C2C2]"
+              ></div>
             </div>
-            <div class="w-full flex flex-col gap-8">
+            <div class="w-full flex flex-col gap-8 sm:p-0 p-[22px]">
               <div class="flex gap-2 items-center">
                 <img
                   src="./src/images/contact-us/image-1.png"
@@ -201,10 +215,10 @@
                 />
                 <div>
                   <p
-                    class="font-ESR text-[20px] font-normal leading-9 text-[#9A9A9A]"
+                    class="font-ESR sm:text-[20px] text-[15px] font-normal leading-9 text-[#9A9A9A]"
                   >
                     <span
-                      class="font-ESR text-[20px] font-normal leading-9 text-[#494949] ml-1"
+                      class="font-ESR sm:text-[20px] text-[15px] font-normal leading-9 text-[#494949] ml-1"
                       >آدرس:</span
                     >
                     تهران، میدان آزادی، خیابان آزادی، خیابان شادمان، پلاک 23
@@ -219,12 +233,12 @@
                 />
                 <div class="flex gap-[5px]">
                   <p
-                    class="font-ESR text-[20px] font-normal leading-9 text-[#494949]"
+                    class="font-ESR sm:text-[20px] text-[15px] font-normal leading-9 text-[#494949]"
                   >
                     شماره تماس:
                   </p>
                   <p
-                    class="font-ESR text-[20px] font-normal leading-9 text-[#9A9A9A]"
+                    class="font-ESR sm:text-[20px] text-[15px] font-normal leading-9 text-[#9A9A9A]"
                   >
                     02166552589
                   </p>
@@ -238,12 +252,12 @@
                 />
                 <div class="flex gap-[5px]">
                   <p
-                    class="font-ESR text-[18px] font-normal leading-[180%] text-[#494949]"
+                    class="font-ESR sm:text-[18px] text-[14px] font-normal leading-[180%] text-[#494949]"
                   >
                     ایمیل:
                   </p>
                   <p
-                    class="font-ESR text-[18px] font-normal leading-[180%] text-[#9A9A9A]"
+                    class="font-ESR sm:text-[18px] text-[13px] font-normal leading-[180%] text-[#9A9A9A]"
                   >
                     info@AutoRent.com
                   </p>
@@ -255,7 +269,7 @@
             <img
               src="./src/images/contact-us/image-3.png"
               alt="image-3"
-              class="min-w-[330px] h-[330px]"
+              class="w-[330px] sm:h-[330px] h-[230px]"
             />
           </div>
         </div>
@@ -270,12 +284,14 @@
           >
             <div class="max-w-[365px]">
               <p
-                class="font-ESR text-[24px] leading-[42px] font-normal text-[#494949]"
+                class="font-ESR sm:text-[24px] text-[17px] leading-[42px] font-normal text-[#494949]"
               >
                 ارسال پیام شما به مجموعه اتورنت
               </p>
             </div>
-            <div class="h-[1.5px] md:w-[365px] w-[325px] bg-[#C2C2C2]"></div>
+            <div
+              class="h-[1.5px] md:w-[365px] sm:w-[325px] w-[200px] bg-[#C2C2C2]"
+            ></div>
           </div>
           <div
             class="flex xl:flex-row flex-col justify-between xl:pr-[43px] xl:pb-[39px] xl:pl-[26px] box-border max-w-[1155px] xl:gap-10 gap-0"
@@ -355,19 +371,24 @@
         <!-- #region footer-->
         <footer
           class="max-w-[1218px] bg-[linear-gradient(rgba(41,45,50,0.85),rgba(41,45,50,0.85)),url(/src/images/footer/image-1.png)] bg-center bg-cover shadow-[0_0_6px_rgba(0,0,0,0.35)] rounded-2xl py-14 px-6 box-border"
+          style="
+            background-image: linear-gradient(
+                rgba(41, 45, 50, 0.85),
+                rgba(41, 45, 50, 0.85)
+              ),
+              url('./src/images/footer/image-1.png');
+          "
         >
           <div
             class="contact max-w-[1120px] rounded-2xl border border-[#868686] box-border p-4 mx-auto flex 2xl:flex-row flex-col 2xl:flex-nowrap flex-wrap items-center justify-center gap-y-5 2xl:py-4 py-[30px] mb-4"
           >
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-2.png" alt="image-2" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -383,9 +404,11 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center 2xl:ml-[81px] justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center 2xl:ml-[81px] justify-center sm:ml-0 ml-[30px]"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-3.png" alt="image-3" />
@@ -406,16 +429,16 @@
             <div
               class="2xl:h-8 2xl:border 2xl:border-[#868686] 2xl:ml-[81px]"
             ></div>
-            <div class="w-[300px] h-px bg-[#868686] 2xl:hidden"></div>
             <div
-              class="2xl:w-[254px] w-full flex gap-4 items-center justify-center"
+              class="sm:w-[300px] w-[150px] h-px bg-[#868686] 2xl:hidden sm:ml-0 ml-[100px] sm:block hidden"
+            ></div>
+            <div
+              class="flex sm:flex-row flex-col gap-4 items-center justify-center sm:ml-0 ml-[30px] content-center"
             >
               <div class="border border-[#FFFFFF] box-border rounded-xl p-3">
                 <img src="./src/images/footer/image-4.png" alt="image-4" />
               </div>
-              <div
-                class="w-[142px] 2xl:w-auto flex flex-col gap-[23px] items-center"
-              >
+              <div class="flex flex-col gap-[23px] items-center justify-center">
                 <p
                   class="font-ESR text-[16px] leading-[180%] font-normal text-[#FFFBFB]"
                 >
@@ -453,9 +476,9 @@
                 class="w-[134px] font-ESM text-[14px] leading-[100%] font-medium flex flex-col justify-center gap-[30px] text-[#FFFFFF] pt-[5px] box-border md:text-right text-center"
               >
                 <a href="#"> <p>دسترسی آسان</p></a>
-                <a href="./questions.html"> <p>سوالات متداول</p></a>
+                <a href="./questions.html"><p>سوالات متداول</p></a>
                 <a href="#"><p>تماس با ما</p></a>
-                <a href="./index.html"> <p>درباره ما</p></a>
+                <a href="./index.html"><p>درباره ما</p></a>
               </div>
             </div>
             <div class="flex justify-center items-center">
@@ -466,10 +489,10 @@
                   خبرنامه
                 </p>
                 <div
-                  class="w-[320px] h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
+                  class="sm:w-[320px] w-full h-10 border border-[#AEAEAE] rounded-md flex items-center px-[5px] justify-between box-border"
                 >
                   <p
-                    class="font-ESR text-[12px] leading-[100%] font-normal text-[#C2C2C2]"
+                    class="font-ESR text-[12px] leading-[180%] font-normal text-[#C2C2C2]"
                   >
                     ایمیل خود را وارد کنید
                   </p>
@@ -486,7 +509,11 @@
             class="max-w-[1120px] mx-auto border border-[#868686] mb-6"
           ></div>
           <div class="certificate mx-auto flex gap-2 justify-center">
-            <img src="./src/images/footer/image-6.png" alt="image-6" />
+            <img
+              src="./src/images/footer/image-6.png"
+              alt="image-6"
+              class="w-[24px] h-[24px]"
+            />
             <p
               class="font-ESM text-[14px] text-[#9A9A9A] font-medium leading-[180%]"
             >
