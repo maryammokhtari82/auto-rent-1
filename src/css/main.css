@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @source "./src/preline/dist/*.js";
+@import "./src/preline/variants.css";
 @font-face {
   font-family: ESM;
   src: url(../fonts/Medium/Estedad-FD\ Medium.eot);
